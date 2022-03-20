@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <!-- JQuery-->
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            //Ocultar H1
+            $("h1").css("display","none");
+
+            //Exibir H1
+            $("#exibir").click(function(){
+                $("h1").fadeIn();
+            });
+
+            //Ocultar H1
+            $("#ocultar").click(function(){
+                $("h1").fadeOut();
+            })
+        });
+    </script>  
+</head>
+<body>
+    <button id="exibir">Exibir</button>
+    <button id="ocultar">ocultar</button>
+    
+    <hr>
+    <h1>Aprendendo JQuery</h1>
+</body>
+</html>
