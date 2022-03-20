@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            var campo = $("input").val();
+            var titulo = $("#titulo").html();
+            var subtitulo = $(".subtitulo").html();
+
+            alert(campo);
+            alert(titulo);
+            alert(subtitulo);
+
+        });
+    </script>
+</head>
+<body>
+    
+    <input type="text" value="Campo Nome">
+    <h1 id="titulo">Título em H1</h1>
+    <h2 class="subtitulo">Título em H2</h2>
+
+</body>
+</html>
