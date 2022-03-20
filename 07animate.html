@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Animate</title>
+
+    <!-- CSS -->
+    <style>
+        div{
+            width: 100px;
+            height: 80px;
+            background-color: green;
+        }
+    </style>
+
+    <!-- JQuery-->
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            //Efeito
+            $("button").click(function(){
+
+                $("div").animate({
+                    width:"400px"
+                });
+            });
+        });
+    </script>  
+</head>
+<body>
+    <button>Clique aqui</button>
+    
+
+    <div></div>
+</body>
+</html>
